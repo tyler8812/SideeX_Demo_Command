@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="command.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="center">Pause Demo</h2>
+        <h2 class="center">Button will change color when it clicked</h2>
+        <div class="demoDiv">
+            <button class="btn btn-primary buttonDiv" id="pauseButton"
+                style="white-space:pre-wrap; background-color:white;" onclick="changeColor('pauseButton')">Click the button and then pause for 2 seconds and then click it again.</button>
+        </div>
+    </div>
+</body>
+<script>
+    var pauseCount = 0
+    function changeColor(id) {
+        if (pauseCount == 1) {
+            document.getElementById(id).style.backgroundColor = "white";
+            pauseCount--;
+        } else if (pauseCount == 0) {
+            document.getElementById(id).style.backgroundColor = "pink";
+            pauseCount++;
+        }
+
+    }
+</script>
+
+</html>

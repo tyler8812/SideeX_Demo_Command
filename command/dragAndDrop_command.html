@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="command.css">
+</head>
+
+<body>
+    <div>
+        <h2 class="center">Drag And Drop Demo</h2>
+        <div class="dragAndDropDiv" id="dragAndDropDiv">
+            <p>Drag the image to where you want</p>
+            <br>
+            <img id="drag1" src="parrot.png" draggable="true" >
+        </div>
+    </div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script>
+    window.onload = ()=>{
+        $("#drag1").draggable();
+    }
+
+</script>
+
+</html>
