@@ -14,13 +14,14 @@
         <h2 class="center">Pause Demo</h2>
         <h2 class="center">Button will change color when it clicked</h2>
         <div class="demoDiv">
-            <button class="btn btn-primary buttonDiv" id="pauseButton"
-                style="white-space:pre-wrap; background-color:white;" onclick="changeColor('pauseButton')">Click the button and then pause for 2 seconds and then click it again.</button>
+            <button class="btn btn-primary buttonDiv" id="pauseButton" style="white-space:pre-wrap; background-color:white;" onclick="changeColor('pauseButton')">Click the button and then pause for 2 seconds and then click it again.</button>
+
         </div>
     </div>
 </body>
 <script>
     var pauseCount = 0
+
     function changeColor(id) {
         if (pauseCount == 1) {
             document.getElementById(id).style.backgroundColor = "white";
