@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="command.css">
+
+    <title>Confirmation title</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="center">Demo</h2>
+        <div class="demoDiv" style="height: 500px;">
+
+            <button class="buttonDiv" id="Button" onclick="confirmation()">Click button to call the confirmation</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p id="text"></p>
+            <br>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    function confirmation() {
+        var text = document.getElementById("text");
+        if (confirm('Yes or No?')) {
+            text.innerHTML = "You choose Yes!";
+        } else {
+            text.innerHTML = "You choose No!";
+        }
+    }
+</script>
+
+</html>
